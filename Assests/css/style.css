@@ -90,6 +90,45 @@ body{
     background-color:hotpink;
 }
 
+<<<<<<< Updated upstream
+=======
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  justify-content: space-between;
+}
+
+.post{
+    margin-bottom: 20px;
+}
+
+.post-img{
+  height: 290px;
+}
+
+.post img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.post h2{
+    background-color: var(--color-primary);
+    padding: 35px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.post p{
+  color: var(--color-dark);
+  padding: 35px;
+  background-color: var(--color-white);
+
+}
+
+
+>>>>>>> Stashed changes
 .sidebar-right{
     background-color:blueviolet;
 }
