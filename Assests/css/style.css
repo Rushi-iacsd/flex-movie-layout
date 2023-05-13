@@ -89,11 +89,6 @@ body{
     padding: 20px;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
 .posts{
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +98,7 @@ body{
 
 .post{
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .post-img{
@@ -113,10 +109,7 @@ body{
     width: 100%;
     object-fit: cover;
     height: 100%;
-<<<<<<< HEAD
-=======
 
->>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
 }
 
 .post h2{
@@ -134,10 +127,7 @@ body{
 }
 
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
+
 .sidebar-right{
     background-color:blueviolet;
 }
