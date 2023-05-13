@@ -55,7 +55,6 @@ body{
   justify-content: space-around;
   flex-direction: column;
   
-
 }
 
 .navbar ul li{
@@ -87,11 +86,14 @@ body{
 /* /////// main content css  ///////////// */
 
 .main-content-area{
-    background-color:hotpink;
+    padding: 20px;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
 .posts{
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +113,10 @@ body{
     width: 100%;
     object-fit: cover;
     height: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
 }
 
 .post h2{
@@ -128,7 +134,10 @@ body{
 }
 
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> 4803d684320611818a5d7e93849202d48cf1af61
 .sidebar-right{
     background-color:blueviolet;
 }
@@ -158,8 +167,21 @@ body{
     .content-area{
         display: flex;
     } 
+     
+        .post-half{
+          width: 49%;
+        }
+
+        .post-one-third{
+            width: 32%;
+        }
+
             .navbar ul{
                 flex-direction: row;
+            }
+
+            .post-img{
+                height: 450px;
             }
         }
 
