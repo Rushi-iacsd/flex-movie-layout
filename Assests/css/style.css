@@ -231,8 +231,45 @@ p.movie-story {
     justify-content: center;
 }
 
+/* ///////// gallery css//////// */
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.gallery-img {
+    height: 250px;
+    margin: 0 0 8px 8px;
+    flex-grow: 1;
+}
 
 
+
+/* /////// 1,5,9 >>>>>>> */
+.gallery-img :nth-child(4n + 1){
+    flex-basis: 250px;
+}
+
+/* /////////// 2, 6 , 10//////// */
+.gallery-img :nth-child(4n + 2){
+    flex-basis: 345px;
+}
+
+/* //////// 3, 7 /////////// */
+.gallery-img :nth-child(4n + 3){
+    flex-basis: 175px;
+}
+
+/* ////////// 4, 8 /////////// */
+.gallery-img :nth-child(4n + 3){
+    flex-basis: 390px;
+}
+     
+.gallery-img img {
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ///// footer css /////// */
 
