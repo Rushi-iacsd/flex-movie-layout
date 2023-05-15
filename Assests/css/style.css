@@ -5,6 +5,10 @@
     font-family: 'Asap', sans-serif;
 }
 
+html{
+  line-height: 1.5;
+}
+
 body{
     background-color: var(--color-secondary);
 }
@@ -126,11 +130,108 @@ body{
 
 }
 
-
-
 .sidebar-right{
     background-color:blueviolet;
 }
+
+/* ///////figure watch section///// */
+
+.watch-card{
+    background-color:var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+
+}
+
+.watch-content{
+    padding: 30px;
+}
+
+.watch-content h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.movie-info {
+    font-weight: 700;
+}
+
+.movie-info span {
+    margin-right: 16px;
+}
+
+p.movie-story {
+    margin: 0.5rem 0 1rem;
+}
+
+.movie-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ///// download css /////// */
+
+.download-cast img {
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+    margin-left: 5px;
+}
+
+.download-icon {
+    display: flex;
+    padding: 1rem 2rem;
+    background: black;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-img {
+   
+    background-color: black;
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+ .download-gener h4,
+ .download-cast h4 {
+    flex-basis: 80px;
+}
+.download-info {
+    padding: 1rem 1rem;
+    background-color: var(--color-white);
+  
+}
+
+
+.download-cast, 
+.download-gener {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.download-rating {
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+
 
 
 /* ///// footer css /////// */
@@ -154,17 +255,23 @@ body{
 /* /////////for Dextop ///////////// */
 
 @media all and (min-width:1200px){
-    .content-area{
-        display: flex;
-    } 
-     
-        .post-half{
-          width: 49%;
-        }
 
-        .post-one-third{
-            width: 32%;
-        }
+        .content-area{
+          display: flex;
+          } 
+     
+        .sidebar-right {
+          background-color: blueviolet;
+          flex: 0 0 400px;
+    }    
+    
+           .post-half{
+               width: 49%;
+           }
+
+           .post-one-third{
+               width: 32%;
+            }
 
             .navbar ul{
                 flex-direction: row;
@@ -172,6 +279,35 @@ body{
 
             .post-img{
                 height: 450px;
+            }
+
+            .watch-card{
+                flex-direction: row;     
+            }
+
+            .watch-content {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .watch-img.order-1{
+                order: 1
+              }
+
+              .download-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .download-info{
+                flex-grow: 1;
+            }
+
+            .download-gener h4, .download-cast h4 {
+                flex-basis: 80px;
             }
         }
 

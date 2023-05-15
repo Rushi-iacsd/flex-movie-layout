@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Assests/css/style.css">
     <link rel="stylesheet" href="./Assests/css/utility.css">
 </head>
@@ -13,7 +16,7 @@
     
   <div class="outer-wrap">
     <header class="header">
-       <div class="site-info">
+        <div class="site-info">
          <h1 class="heading">header</h1>
          <p class="description"> set back / relax / watch </p>
        </div>
@@ -22,12 +25,14 @@
             <li><a href="javascript:;">watch</a></li>
             <li><a href="javascript:;">Download</a></li>
             <li><a href="javascript:;">Gallery</a></li>
-          </ul>
-        
+          </ul>    
+        </nav> 
     </header>
-  
+
       <div class="content-area">
         <main class="main-content-area">
+        <!-- ///////// Section posts  ///////////// -->
+
           <section class="posts">
             <article class="post post-half">
               <a href="javascript:;">
@@ -115,12 +120,99 @@
             </article>     
            </section>
 
+          <!-- //////////////// watch section///////// -->
 
-         </main>
-        <aside class="sidebar-right">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum debitis iusto perferendis, necessitatibus molestiae quisquam nulla aut nemo exercitationem sequi, reiciendis quo non hic
-          consectetur doloribus voluptate cum eveniet!
-        </aside>
+          <section class="watch">
+             <h2 class="section-heading">watch today</h2>
+             <figure class="watch-card">
+               <div class="watch-img">
+                  <img class="img-fluid" src="./Assests/images/images/img_8.jpg" alt="baby driver" title="baby driver">
+                 </div>
+               <figcaption class="watch-content">
+                 <h3>baby driver</h3>
+                  <div class="movie-info">
+                   <span>2017</span>
+                   <span>124</span>
+                   <span>Action</span>
+                   <span>7.8</span>
+                   <span>8:30 pm</span>
+                   <p class="movie-story">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. necessitatibus
+                   </p>
+                   <a href="javascript:;">
+                     read more...
+                   </a>
+                  </div>  
+                </figcaption>
+              </figure>
+
+             <figure class="watch-card">
+                <div class="watch-img order-1">
+                 <img class="img-fluid" src="./Assests/images/images/img_9.jpg" alt="Fight Club" title="Fight Club">
+                </div>
+               <figcaption class="watch-content">
+                  <h3>Fight Club</h3>
+                 <div class="movie-info">
+                    <span>2017</span>
+                    <span>124</span>
+                    <span>Action</span>
+                    <span>7.8</span>
+                    <span>8:30 pm</span>
+                    <p class="movie-story">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. necessitatibus
+                    </p>
+                   <a href="javascript:;">
+                     read more...
+                    </a>
+                  </div>       
+                </figcaption>
+              </figure>
+            </section>
+
+           <!-- //////////////// download section///////// -->
+
+           <section class="download">
+            <h2 class="section-heading">download now</h2>
+            <figure class="download-card">
+              <div class="download-img">
+                <img src="./Assests/images/images/img_11.png" alt="" class="img-fluid">
+              </div>
+             <div class="download-content">
+                <a href="javascript:;"  class="download-icon">
+                  <div> Download </div>
+                  <i class="fa-solid fa-cloud-arrow-down"></i>
+                </a>
+                <div class="download-info">
+                  <div class="download-gener">
+                   <h4> Gener :</h4>
+                 
+                   <p>
+                      adventure, romance, action, horror      
+                   </p>
+                  </div>
+                 <div class="download-cast">
+                    <h4>
+                      cast :
+                    </h4>
+                    <img src="./Assests/images/images/img_11.jpg" alt="">
+                    <img src="./Assests/images/images/img_12.jpg" alt="">
+                    <img src="./Assests/images/images/img_13.jpg" alt="">
+                    <img src="./Assests/images/images/img_14.jpg" alt="">
+                    <img src="./Assests/images/images/img_15.jpg" alt="">
+                 </div>       
+              </div>
+              <div class="download-rating">
+                <span>8</span> 
+                <span>(1200 rating)</span> 
+                <span>(8 seasons)</span> 
+               </div>
+             </figure>
+           </section>
+          </main>
+          <aside class="sidebar-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsum debitis iusto perferendis, necessitatibus molestiae quisquam nulla aut nemo exercitationem sequi, reiciendis quo non hic
+            consectetur doloribus voluptate cum eveniet!
+          </aside>
       </div>
   
       <footer class="footer">
@@ -128,8 +220,11 @@
           all rights are reserved 
         </p>
        </footer>
+ </div>
 
-  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./Assests/js/app.js"></script>
 </body>
 </html>

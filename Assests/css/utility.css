@@ -18,5 +18,23 @@ ul{
 }
 
 
+  .img-fluid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.section-heading {
+  margin: 20px;
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: var(--color-dark);
+}
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
