@@ -101,12 +101,17 @@ body{
 }
 
 .post{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
 .post-img{
   height: 290px;
+}
+
+.post-img1 {
+    height: 250px;
+    object-fit: cover;
 }
 
 .post img{
@@ -131,7 +136,9 @@ body{
 }
 
 .sidebar-right{
-    background-color:blueviolet;
+    background-color:#ededed;
+    color: black;
+    padding: 20px;
 }
 
 /* ///////figure watch section///// */
@@ -271,25 +278,52 @@ p.movie-story {
     object-fit: cover;
 }
 
+/* ///////////////// Sidebar-right css //////////////// */
+
+.widget{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+ 
+.widget-content {
+    padding: 10px 20px;
+}
+
+.widget-content h3 {
+    margin-bottom: 7px;
+}
+
+.sidebar-menu ul a{
+    display: block;
+    padding: 2px 10px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
 /* ///// footer css /////// */
 
 .footer{
     background-color: var(--color-dark);
     color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 
 
 
 /* ////////////// Tablet////////////// */
 
-@media all and (min-width:600px){
+/* @media all and (min-width:768px){
     .navbar ul{
         flex-direction: row;
     }
-}
+} */
 
 
-/* /////////for Dextop ///////////// */
+/* /////////for Dextop , lapto , pc ///////////// */
 
 @media all and (min-width:1200px){
 
@@ -298,7 +332,7 @@ p.movie-story {
           } 
      
         .sidebar-right {
-          background-color: blueviolet;
+          background-color: #ededed;
           flex: 0 0 400px;
     }    
     
@@ -327,6 +361,7 @@ p.movie-story {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+              
             }
 
             .watch-img.order-1{
@@ -346,9 +381,34 @@ p.movie-story {
             .download-gener h4, .download-cast h4 {
                 flex-basis: 80px;
             }
-        }
+
+            .post-img1 {
+                height: 650px;
+                object-fit: cover;
+            }
+            } 
+        
 
 
 
+@media all and (min-width: 768px) and (max-width: 1200px){
 
+    .sidebar-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .post-img1 {
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .widget{
+        flex-basis: 49%;
+    }
+
+  
+
+}
        
